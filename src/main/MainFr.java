@@ -19,7 +19,7 @@ public class MainFr extends PApplet {
 	}
 	
 	public void draw() {
-		background(255);
+		background(176,224,230);
 	}
 	
 }
