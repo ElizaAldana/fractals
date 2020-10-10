@@ -6,28 +6,49 @@ public abstract class FiguresFr {
 
 	
 	PApplet app;
-	private int posX;
-	private int posY;
+	private int x;
+	private int y;
+	private float grow;
 	
-	public FiguresFr (int posX, int posY) {
-		
+	public FiguresFr (int x, int y, PApplet app, float grow) {
+	this.app = app;
+	this.x = x;
+	this.y = y;
+	this.grow = grow;
 	}
 
-	public int getPosX() {
-		return posX;
+	protected abstract void drawFigure(int x, int y, float grow);
+
+	
+	public int getX() {
+		return x;
 	}
 
-	public void setPosX(int posX) {
-		this.posX = posX;
+
+	public void setX(int x) {
+		this.x = x;
 	}
 
-	public int getPosY() {
-		return posY;
+
+	public int getY() {
+		return y;
 	}
 
-	public void setPosY(int posY) {
-		this.posY = posY;
+
+	public void setY(int y) {
+		this.y = y;
 	}
+
+
+	public float getGrow() {
+		return grow;
+	}
+
+
+	public void setGrow(float grow) {
+		this.grow = grow;
+	}
+
 	
 	
 }
