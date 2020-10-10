@@ -2,7 +2,7 @@ package main;
 
 import processing.core.PApplet;
 
-public class Rectangle extends FiguresFr{
+public class Rectangle extends FiguresFr implements Control{
 
 	
 	PApplet app;
@@ -37,4 +37,7 @@ public class Rectangle extends FiguresFr{
 			rotateSquare(imp,rotate);
 		}
 		}
+
+
+	
 }
