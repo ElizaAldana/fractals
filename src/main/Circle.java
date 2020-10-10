@@ -7,17 +7,19 @@ import processing.core.PApplet;
 	PApplet app;
 
 	
-	public Circle (int posX, int posY, PApplet app, float grow) {
-		super(posX,posY,app, grow);
+	public Circle (int x, int y, float grow, PApplet app) {
+		super(x,y,grow,app);
 		this.app = app;
 		
 	}
 	
-	public void drawFigure(int x, int y, float grow) {
+	public void drawFigure() {
 		app.ellipse(x, y, grow, grow);
 		if(grow > 2) {
 			grow *= 0.75f;
-		drawFigure(x, y, grow);
+		drawFigure();
 		  }
 }
+
+
 }
